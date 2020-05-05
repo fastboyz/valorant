@@ -1,13 +1,13 @@
 <template>
-   <b-container id="app">
+  <b-container id="app">
     <b-row>
       <b-col>
-        <navbar/>
+        <nav-component></nav-component>
       </b-col>
     </b-row>
     <b-row>
       <b-col>
-        <router-view/>
+        <router-view></router-view>
       </b-col>
     </b-row>
   </b-container>
@@ -35,14 +35,3 @@
   }
 }
 </style>
-
-<script>
-import Navbar  from "@/components/navbar/Navbar";
-
-export default {
-  name: "App",
-  components: {
-    Navbar
-  }
-};
-</script>
