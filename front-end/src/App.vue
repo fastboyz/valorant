@@ -1,11 +1,16 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+   <b-container id="app">
+    <b-row>
+      <b-col>
+        <navbar/>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col>
+        <router-view/>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <style lang="scss">
@@ -30,3 +35,14 @@
   }
 }
 </style>
+
+<script>
+import Navbar  from "@/components/navbar/Navbar";
+
+export default {
+  name: "App",
+  components: {
+    Navbar
+  }
+};
+</script>
